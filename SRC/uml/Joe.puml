@@ -1,0 +1,32 @@
+class MenuItem {
+    - Name: String
+    - Description: String
+    - Price: double
+}
+
+class Order {
+    - OrderID: String
+    - Items: List<MenuItem>
+    - Status: String
+    + addItems(item: MenuItem, quantity: int): void
+    + updateStatus(newStatus: String): void
+}
+
+class Customer {
+    - Name: String
+    - LoyaltyPoints: int
+    + placeOrder(order: Order): void
+    + joinLoyaltyProgram(): void
+}
+
+class Kitchen {
+    - CurrentOrders: List<Order>
+    - CookedOrders: List<Order>
+    - WastedOrders: List<Order>
+    + startCooking(order: Order): void
+    + notifyFrontCounter(order: Order): void
+    + trackWaste(order: Order): void
+}
+
+Order "1" *-- "1..*" MenuItem
+Customer "1" *-- "0..*" Order

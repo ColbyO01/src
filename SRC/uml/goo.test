@@ -1,0 +1,15 @@
+title Start here
+
+class A
+class B
+A - B
+class C {
+    -attr1
+    -attr2: String
+    +C(attr1, attr2: String)
+    +getAttr1()
+    +getAttr2(): String
+    +doThing(): void
+}
+class D
+C -- D
