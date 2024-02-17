@@ -1,0 +1,2 @@
+git config user.name "Colby Oxley"
+git config user.email "col2192523@maricopa.edu"
