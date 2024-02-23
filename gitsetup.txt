@@ -1,2 +1,25 @@
 git config user.name "Colby Oxley"
 git config user.email "col2192523@maricopa.edu"
+
+
+THE FIRST TIME you set up your repository, you need to edit the first two
+git config commands that appear at the top of this file.
+
+1. In the git config user.name command, keep the quotes and
+   change "Pat Doe" to your name.
+2. In the git config user.email command, keep the quote and 
+   change "pat2345678@maricopa.edu" to your email address.
+
+EVERY TIME you clone your repository to a new directory 
+INCLUDING the first time you set things up, you need to:
+
+1. Select the git config commands in the first two lines of this file.
+2. Use Copy (right-click and press Copy or similar) to copy these lines.
+3. Open a Terminal window (under the Terminal menu bar option at the top),
+   choose New Terminal.
+4. Paste these commands into the terminal window to execute them.
+5. Press the enter key to make sure the last command executes.
+
+You will not be able to commit changes unless you copy and paste these commands.
+
+If you have any questions or problems, please contact your instructor.
